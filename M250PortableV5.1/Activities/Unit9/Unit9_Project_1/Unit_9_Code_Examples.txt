@@ -1,0 +1,164 @@
+// M250  Unit 9 Code Examples 
+
+//==========================================			
+// There is no code provided for Activity 1, 
+// but you can save your answers here
+
+
+//==========================================			
+//ACTIVITY 2
+String[] nameArray = {"Ann", "Rob", "Kin", "Sue", "Fethi", "Jo"};
+int[] intArray = {10, 5, 7, 2, 9, 8, 1, 12};
+Frog[] frogPond = {new Frog(), new Frog(), new Frog()};
+
+// There is no code provided for parts (1) to (4) or (9) to (15),
+// but you can save your answers here.
+
+//(5)
+int num1 = intArray[0] + intArray[6];
+
+//(6) 
+int num2 = intArray[7] / intArray[2];
+
+//(7) 
+int num3 = intArray[0] + intArray[4] * intArray[3];
+
+//(8) 
+double num4 = intArray[4] / 2.0; 
+
+
+//==========================================			
+//ACTIVITY 3
+// Array declaration for parts (1) - (4)
+int[] intArray = {10, 5, 7, 2, 9, 8, 1, 12};
+
+// Array declarations for part (6)
+
+int[] anArray = {7, 6, 9, 2, 6, 10, 8};
+int[] anotherArray = {7, 6, 9, 2, 6, 10, 8};
+
+int[] anArray = {7, 6, 9, 2, 6, 10, 8};
+int[] anotherArray = {7, 6, 9, 1, 6, 10, 8};
+
+int[] anArray = {7, 6, 9, 2, 6};
+int[] anotherArray = {7, 6, 9, 2, 6, 10, 8};
+
+int[] anArray = {};
+int[] anotherArray = {};
+
+//Array declaration for part(7)
+Frog[] frogPond = {new Frog(), new Frog(), new Frog()};  
+
+
+//==========================================			
+//ACTIVITY 4
+int[] firstIntArray = {9, 3, 7, 2, 8, 4, 10, 1, 5, 6};
+int[] secondIntArray = {9, 3, 7, 2, 8, 4, 10, 1, 5, 6};
+String[] firstStringArray = {"Bob", "Anne", "Alan", "Mani"};
+String[] secondStringArray = {"Mani", "Alan", "Bob", "Anne"};
+
+
+//(1) 
+Arrays.toString(firstIntArray);
+Arrays.toString(firstStringArray);
+
+//(2) 
+Arrays.equals(firstIntArray, secondIntArray);
+Arrays.equals(firstStringArray, secondStringArray);
+
+//(3) 
+Arrays.sort(firstIntArray);
+Arrays.sort(firstStringArray);
+
+//(4)
+Arrays.fill(firstIntArray, 0);
+
+//5)
+Arrays.fill(secondIntArray, 2, 8, 100); 
+
+// There is no pre-prepared code required for items (6) and (7)
+
+
+//==========================================			
+//ACTIVITY 5
+String aString = "Brian Aldridge";
+String bString = "Ed Grundy";
+String cString = "brian aldridge";
+String dString = "    a string with leading and trailing spaces     ";
+
+//(1)
+aString.charAt(4);
+bString.charAt(0);
+
+//(2) 	
+aString.compareTo(bString);
+bString.compareTo(aString);
+aString.compareTo(cString);
+aString.compareToIgnoreCase(cString);
+
+//(3) 	
+aString.indexOf('i');
+bString.indexOf('G');
+cString.indexOf('B');
+
+//(4)	
+aString.indexOf("Ald");
+bString.indexOf("ward");
+
+//(5) 	
+aString.replace('i', '*');
+bString.replace('d', 'm');
+
+//(6) 	
+dString.trim();
+
+//(7)
+aString.length();
+
+//(8) 	
+aString.substring(4);
+bString.substring(6);
+cString.substring(3, 5);
+
+
+
+//==========================================			
+// ACTIVITY 6
+long start = System.nanoTime();
+String str = "";
+for (int i = 1; i <= 10000; i++)
+{
+  str = str + "*";
+}
+long elapsed = System.nanoTime() - start;
+System.out.println(elapsed + " ns");
+System.out.println(elapsed / 1e9 + " s");
+
+
+//==========================================			
+// ACTIVITY 7
+StringBuilder aSB = new StringBuilder("Bob");
+
+//(1) 	
+aSB.length();
+aSB.capacity();
+
+//(2) 	
+aSB.append(" is ");
+aSB.append(50);
+
+//(3) 	
+aSB.length();
+aSB.capacity();
+
+//(4) 	
+aSB.deleteCharAt(0);
+
+//(5) 	
+aSB.insert(0, 'R');
+
+//(6) 	
+aSB.reverse();
+
+//(7) 	
+aSB.toString();

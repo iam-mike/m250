@@ -1,0 +1,7 @@
+Set accountSet = new HashSet();
+Account anAccount = new Account("David Green","010",50);
+accountSet.add(anAccount);
+anAccount = new Account("John Smith","020",150);
+accountSet.add(anAccount);
+anAccount = new Account("Mary Jones","030",175.50);
+accountSet.add(anAccount);
