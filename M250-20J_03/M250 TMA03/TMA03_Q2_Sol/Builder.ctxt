@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Builder()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Builder\n
+comment1.params=aReg\ aName\ anAddress\ aTrade
+comment1.target=void\ addContractor(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ printContractors()
+comment3.params=aReg
+comment3.target=void\ findContractor(java.lang.String)
+comment4.params=aTrade
+comment4.target=java.util.Set\ findContractorsForTrade(java.lang.String)
+numComments=5

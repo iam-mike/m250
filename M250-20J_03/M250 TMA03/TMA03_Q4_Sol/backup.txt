@@ -1,0 +1,4 @@
+int state = 0;
+state++;
+state = state + 1;
+state = -1;

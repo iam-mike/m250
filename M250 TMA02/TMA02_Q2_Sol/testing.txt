@@ -1,0 +1,7 @@
+Car c = new Car("BMW", "340i", 54, 2007);
+Engine e = new Engine (c, 25060, 3000, "Petrol");
+e.drive(1000); //uses 20L fuel
+e.drive(51); //uses 1L fuel
+e.drive(49); // uses 0l fuel
+e.drive(65536); // not enough fuel refuel first
+e.drive(-65536); // adds 1310 fuel. Reason: no check for negative int in drive()method so distance/50 == -1310. which is used in calculations and "subtracted from fuel level". Solutions could be to check > 0 before fuel level check. 

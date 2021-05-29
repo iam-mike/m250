@@ -1,0 +1,11 @@
+Map<String, Integer> ageMap = new HashMap<String, Integer>();
+     ageMap.put("Jill", 3);
+     ageMap.put("Kevin", 5);
+     ageMap.put("James", 5);
+     ageMap.put("Louise", 5);
+     ageMap.put("Peter", 2);
+     ageMap.put("Sally", 1);
+     ageMap.remove("Kevin");
+     ageMap.put("Jill", 1);
+
+System.out.println(ageMap.get("Jill"));

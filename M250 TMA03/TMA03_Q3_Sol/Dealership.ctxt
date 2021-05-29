@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Dealership()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Dealership\n
+comment1.params=
+comment1.target=void\ restock()
+comment1.text=\n\ Adds\ default\ stock\ list\ to\ dealership\n
+comment2.params=
+comment2.target=void\ printMap()
+comment2.text=\n\ Prints\ current\ stock\ level\ of\ dealership\n
+comment3.params=aKey
+comment3.target=void\ printMapValue(java.lang.String)
+comment3.text=\n\ prints\ all\ stock\ for\ current\ manufacturer,\ if\ present.\n
+comment4.params=manufacturer\ models
+comment4.target=void\ addMapEntry(java.lang.String,\ java.util.List)
+comment4.text=\n\ adds\ new\ entry\ to\ stock\ list,\ overwrites\ existing\ if\ necessary\n
+comment5.params=aKey
+comment5.target=boolean\ deleteEntry(java.lang.String)
+comment5.text=\n\ deletes\ key\ and\ associated\ values\ from\ Map\ if\ present\ and\ returns\ true.\ Else,\n\ returns\ false.\n
+comment6.params=aKey\ aValue
+comment6.target=void\ addToValueAtKey(java.lang.String,\ java.lang.String)
+comment6.text=\n\ adds\ model\ to\ existing\ manufacturer\n
+comment7.params=aKey\ aValue
+comment7.target=void\ deleteFromValueAtKey(java.lang.String,\ java.lang.String)
+comment7.text=\n\ removes\ model\ from\ existing\ manufacturer\n
+numComments=8

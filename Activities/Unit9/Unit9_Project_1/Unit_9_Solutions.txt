@@ -1,0 +1,247 @@
+// M250 Unit 9 Code Solutions
+
+
+//==========================================
+// SAMPLE ANSWERS FOR ACTIVITY 1
+//(1)
+String[] nameArray = new String[6];
+
+//(2)
+int len = nameArray.length;
+
+//(3)
+nameArray[0] = "Ann";
+nameArray[1] = "Rob";
+nameArray[2] = "Kin";
+nameArray[3] = "Sue";
+nameArray[4] = "Fethi";
+nameArray[5] = "Jo";
+
+//(4) 
+nameArray[3] = "Lin";
+
+//(5)  
+nameArray[2] = OUDialog.request("Please enter your name", "anonymous");
+
+//(6) 
+int[] intArray  = {10, 5, 7, 2, 9, 8, 1, 12};  
+
+//(7)	
+Frog[] frogPond = new Frog[3];
+frogPond[0] = new Frog(); 
+frogPond[1] = new Frog();
+frogPond[2] = new Frog();
+
+//Or alternatively:
+Frog[] frogPond = {new Frog(), new Frog(), new Frog()};
+
+
+
+//==========================================
+// SAMPLE ANSWERS FOR ACTIVITY 2
+
+String[] nameArray = {"Ann", "Rob", "Kin", "Sue", "Fethi", "Jo"};
+int[] intArray = {10, 5, 7, 2, 9, 8, 1, 12};
+Frog[] frogPond = {new Frog(), new Frog(), new Frog()};
+
+//(1)
+OUDialog.alert(nameArray[4]);
+
+//(2)
+nameArray[0].equals(nameArray[1]);
+
+//(3)
+String temp = nameArray[1];
+
+//(4)
+nameArray[1] = nameArray[4];
+nameArray[4] = temp;
+
+// (5)   11     (10 + 1)
+// (6)   1      (12/7 ) integer division 
+// (7)   28     (10 + 9 *2) multiplication is done first, then  addition
+// (8)	 4.5  	(9 / 2.0) the operand 2.0 of type double 
+//						   forces this to be floating-point division.
+
+//(9)
+intArray[7] = intArray[7] * 2;
+
+//(10)
+intArray[3] = intArray[1]  + intArray[2];
+
+//(11)
+frogPond[2].setColour(OUColour.RED);
+
+//(12)
+frogPond[0].right();
+
+//(13)
+frogPond[0].sameColourAs(frogPond[2]);
+
+//(14)
+frogPond[2].setPosition(frogPond[2].getPosition() + 3);
+
+//(15)
+Frog tempFrog = frogPond[1];
+frogPond[1] = frogPond[0];
+frogPond[0] = tempFrog;
+
+//==========================================
+// SAMPLE ANSWERS FOR ACTIVITY 3
+
+// array for parts (1) - (4)
+int[] intArray = {10, 5, 7, 2, 9, 8, 1, 12}; 
+
+//(1)
+
+for(int anInt : intArray)
+{
+    System.out.println(anInt);
+}
+
+//(2)
+int sum = 0;
+for (int anInt : intArray)
+{
+    sum = sum + anInt;
+}
+OUDialog.alert("Sum is " + sum);
+
+//(3)
+for (int i = 0; i < intArray.length; i++)
+{
+    if (intArray[i] > 8)
+    {
+       intArray[i] = 0;
+    }
+}
+
+// (4)
+int[] intArrayCopy = new int[intArray.length];
+for (int i = 0; i < intArray.length; i++)
+{
+intArrayCopy[i] = intArray[i];
+}
+
+
+//(5)
+String desiredLength;
+String input = "";
+desiredLength = 
+     OUDialog.request("How many integers do you wish to store?", "10");
+int[] myArray = new int[Integer.parseInt(desiredLength)];
+for (int i = 0; i < myArray.length; i++)
+{
+    input = OUDialog.request("Please enter an integer", "0");	
+    myArray[i] = Integer.parseInt(input);
+} 
+
+// tests for (6)
+int[] anArray = {7, 6, 9, 2, 6, 10, 8};
+int[] anotherArray = {7, 6, 9, 2, 6, 10, 8};
+
+int[] anArray = {7, 6, 9, 2, 6, 10, 8};
+int[] anotherArray = {7, 6, 9, 1, 6, 10, 8};
+
+int[] anArray = {7, 6, 9, 2, 6};
+int[] anotherArray = {7, 6, 9, 2, 6, 10, 8};
+
+int[] anArray = {};
+int[] anotherArray = {};
+
+//(6)
+boolean identical = true;
+int i = 0;
+if (anArray.length == anotherArray.length)
+{
+    while ((i < anArray.length) && (identical))
+    {
+        if (anArray[i] != anotherArray[i])
+        {
+            identical = false;
+        }
+        i++;   
+    }				
+}
+else
+{
+    identical = false;
+}
+
+
+// initial array for (7) - no red frogs
+Frog[] frogPond = {new Frog(), new Frog(), new Frog()};
+
+// one red frog
+frogPond[2].setColour(OUColour.RED);
+
+// two red frogs
+frogPond[1].setColour(OUColour.RED);
+
+//(7)
+int i = 0;
+boolean found = false;
+while (i < frogPond.length && !found)
+{
+  if (frogPond[i].getColour().equals(OUColour.RED))                  
+  {
+	  found = true;
+  }
+  else
+  {
+  	i++;   
+  }
+}
+if (found) 
+{
+  OUDialog.alert("Red frog found at index " +  i);
+}
+else
+{
+  OUDialog.alert("No red frogs found in this pond");
+}
+
+//==========================================
+// SAMPLE ANSWERS FOR ACTIVITY 4
+
+// Execute these to get the arrays into the correct state for parts (6) and (7)
+	int[] secondIntArray = { 9, 3, 100, 100, 100, 100, 100, 100, 5, 6};
+	String[] firstStringArray = {"Alan" ,  "Anne",  "Bob" ,  "Mani" }; 
+
+
+//(6)
+	Arrays.sort(secondIntArray);
+	Arrays.binarySearch(secondIntArray, 9);
+
+
+//(7)
+	Arrays.binarySearch(firstStringArray, "Anne");
+	Arrays.binarySearch(firstStringArray, "Bill"); 
+
+			
+//==========================================
+// ACTIVITY 5
+// Involves reflecting on the behaviour of various given expressions
+
+
+//==========================================
+// SAMPLE ANSWERS FOR ACTIVITY 6
+
+// Part 1 of activity 6 involves timing the execution of code
+
+// Code fragment for part 2 of activity 6
+
+long start = System.nanoTime();
+StringBuilder sb = new StringBuilder(10000);
+for (int i = 1; i <= 10000; i++)
+{
+  sb.append("*");
+}
+elapsed = System.nanoTime() - start;
+System.out.println(elapsed + " ns");
+System.out.println(elapsed / 1e9 + " s");
+
+
+//==========================================
+// SAMPLE ANSWERS FOR ACTIVITY 7
+// Involves reflecting on various uses of StringBuilder

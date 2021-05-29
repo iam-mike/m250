@@ -1,0 +1,13 @@
+CreditCardChecker ccc = new CreditCardChecker("4365300588292181483");
+ccc.getLongNumber();
+ccc.validNumberResult();
+
+//Credit card numbers to check
+
+""     // not valid (too short) 
+""    // not valid - calculated check digit is 8
+""    // could be valid
+""    // could be valid
+""    // not valid - calculated check digit is 5
+""    // could be valid
+"" // not valid (too long)

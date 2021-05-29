@@ -1,0 +1,15 @@
+Dealership aDealer = new Dealership();
+aDealer.restock();
+
+aDealer.addToValueAtKey("BMW","M3");
+
+List<String> bmwModels = new ArrayList<String>();
+      bmwModels.add("1 Series");
+      bmwModels.add("2 Series");
+      bmwModels.add("3 Series");
+      bmwModels.add("4 Series");
+      bmwModels.add("M4");
+
+bmwModels.remove("M4");
+
+aDealer.deleteFromValueAtKey("BMW","M4");

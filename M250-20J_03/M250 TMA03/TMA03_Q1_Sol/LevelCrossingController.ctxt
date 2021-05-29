@@ -1,0 +1,30 @@
+#BlueJ class context
+comment0.params=tl\ tr\ bt
+comment0.target=LevelCrossingController(Light,\ Light,\ Light)
+comment0.text=\r\n\ does\ stuff\r\n\ TODO\ -\ ADD\ Comment\r\n
+comment1.params=
+comment1.target=boolean\ getTrainComing()
+comment1.text=\r\n\ @return\ trainComing\r\n
+comment2.params=trainComing
+comment2.target=void\ setTrainComing(boolean)
+comment2.text=\r\n\ @param\ trainComing\r\n\ setter\ for\ trainComing\r\n
+comment3.params=
+comment3.target=void\ setPositions()
+comment3.text=\r\n\ Sets\ the\ positions\ of\ the\ lights.\r\n
+comment4.params=
+comment4.target=void\ changeState()
+comment4.text=\r\n\ cycles\ through\ state\ 0-3\ in\ prescribed\ order\r\n\ 0\ \=\ 1\r\n\ 1\ \=\ 2\r\n\ 2\ \=\ 3\r\n\ 3\ \=\ 2\r\n
+comment5.params=
+comment5.target=void\ colourAllLights()
+comment5.text=\r\n\ \r\n
+comment6.params=
+comment6.target=int\ findNumRepeats()
+comment6.text=\r\n\ Find\ out\ how\ many\ times\ red\ lights\ should\ flash\ at\ the\ crossing.\r\n\ Simulates\ length\ of\ train\ at\ crossing.\r\n
+comment7.params=time
+comment7.target=void\ delay(int)
+comment7.text=\r\n\ Causes\ execution\ to\ pause\ for\ a\ number\ of\ milliseconds.\r\n
+comment8.params=light\ colour
+comment8.target=void\ colourLight(Light,\ ou.OUColour)
+comment9.params=
+comment9.target=void\ doTrainApproaching()
+numComments=10

@@ -1,0 +1,18 @@
+
+/* Code to find the median of the numbers in a list userData */
+
+   float med;
+   int size = userData.size(); 
+   if (size % 2 == 1 ) // Odd number of data
+   {
+      // Middle item
+      int mid = (size - 1)/2;
+      med = userData.get(mid);
+   }
+   else // Even number of data
+   {
+      // Average of two middle items
+      int mid1 = (size/2) - 1;
+      int mid2 = size/2;
+      med = ((float) (userData.get(mid1) + userData.get(mid2)))/2;
+   }

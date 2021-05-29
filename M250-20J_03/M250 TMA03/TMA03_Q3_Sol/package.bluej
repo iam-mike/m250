@@ -1,0 +1,26 @@
+#BlueJ package file
+package.editor.height=400
+package.editor.width=642
+package.editor.x=1061
+package.editor.y=121
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+readme.editor.height=700
+readme.editor.width=900
+readme.editor.x=0
+readme.editor.y=25
+target1.editor.height=1115
+target1.editor.width=960
+target1.editor.x=960
+target1.editor.y=25
+target1.height=50
+target1.name=Dealership
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=90
+target1.x=100
+target1.y=20

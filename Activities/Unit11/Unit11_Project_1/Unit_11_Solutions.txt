@@ -1,0 +1,143 @@
+// M250 UNIT 11
+// Sample Code Solutions
+  
+// ACTIVITY 3  
+
+// A Shakespearian-themed code example
+
+	   /**
+	    * This code inserts elements in the correct
+	    * postions to produce a well-known phrase.
+	    */
+	      List<String> phrase = new ArrayList<>();
+	      phrase.add("be");
+	      phrase.add(0, "To");
+	      phrase.add("or");
+	      phrase.add("be");
+	      phrase.add(3, "not");
+	      phrase.add(4, "to");
+	      for (String eachElement : phrase)
+	      {
+	         // Prints elements all on one line, separated by spaces
+	         System.out.print(eachElement + " ");
+	      }
+	   
+   
+// ACTIVITY 5
+
+// Example code that steps through a traditional form of riddle.
+
+	      List<String> word = new ArrayList<>();
+	      word.add("F");
+	      word.add("R");
+	      word.add("O");
+	      word.add("G");
+	      System.out.println(word); 
+
+	      word.remove(1);
+	      System.out.println(word);
+	      word.set(0, "L");
+	      System.out.println(word);
+	      word.set(1, "A");
+	      System.out.println(word);
+	      word.set(2, "D");
+	      System.out.println(word);
+	      word.add(1, "O");
+	      System.out.println(word);
+	      word.set(0, "T");
+	      System.out.println(word);
+
+   
+// ACTIVITY 7
+
+      //   Step 1 - create empty list
+      List<Integer> userData = new ArrayList<>();
+
+      // Step 2 - data entry
+      String prompt = "Input an integer. Press Cancel to end."; 
+      String input = OUDialog.request(prompt);
+      while (input != null)
+      {
+         userData.add(Integer.parseInt(input)); 
+         input = OUDialog.request(prompt);
+      }
+
+      // Step 3 - sort data
+      Collections.sort(userData);
+      
+      // Step 4 - total data and calculate average
+      int total = 0;
+      for (int eachElement : userData) 
+      {
+         total = total + eachElement;
+      }
+      float avg = ((float)total) / userData.size();
+
+      // Step 5 - find median
+      float med;
+      int size = userData.size(); 
+      if (size % 2 == 1) // Odd number of data
+      {
+         // Middle item
+         int mid = (size - 1) / 2;
+         med = userData.get(mid);
+      }
+      else // Even number of data
+      {
+         // Average of two middle items
+         int mid1 = (size / 2) - 1;
+         int mid2 = size / 2;
+         med = ((float) (userData.get(mid1) + userData.get(mid2))) / 2;
+      }
+
+      // Step 6 - find maximum and minimum
+      int maxVal = userData.get(size - 1);
+      int minVal = userData.get(0);
+
+      // Step 7 - output results
+      System.out.println("There were " + size + " numbers.");
+      System.out.println("The average was " + avg);
+      System.out.println("The median was " + med);
+      System.out.println("The maximum was " + maxVal + " and the minimum was " + minVal);
+   
+
+
+// ACTIVITY 8
+
+// Bulk manipulation of a list
+
+     // Set up list1 and list2 first
+      Character[] array1 = 
+      {'a', 'b', 'r', 'a', 'c', 'a', 'd', 'a', 'b', 'r', 'a'};
+
+      List<Character> list1 = Arrays.asList(array1);
+      Character[] array2 = {'d', 'a', 'b', 'c', 'h', 'i', 'c', 'k'};
+
+      List<Character> list2 = Arrays.asList(array2);
+
+     // Display lists
+      System.out.println("This is list 1: " + list1);
+      System.out.println("This is list 2: " + list2);
+
+// To try addAll()
+ List<Character> list3 = new ArrayList<>(list1);
+ list3.addAll(list2);
+ System.out.println("This is list 3: " + list3);
+
+// To try removeAll()
+ List<Character> list4 = new ArrayList<>(list1);
+ list4.removeAll(list2);
+ System.out.println("This is list 4: " + list4);
+
+// To try retainAll()
+ List<Character> list5 = new ArrayList<>(list1);
+ list5.retainAll(list2);
+  System.out.println("This is list 5: " + list5);
+
+// To create a treeSet from list1
+ Set<Character> set1 = new TreeSet<>(list1);
+ System.out.println("This is set 1: " + set1);
+
+
+
+	

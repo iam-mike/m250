@@ -1,0 +1,179 @@
+// M250 Unit 10 Code Solutions 
+
+
+// Sample Solution to Activity 4
+	// Herb Iteration Demo
+	// Demonstrates iteration over a set of strings
+
+	Set<String> herbSet = new HashSet<>();
+	herbSet.add("camomile");
+	herbSet.add("rosemary");
+	herbSet.add("basil");
+	herbSet.add("thyme");
+	herbSet.add("mint");
+	herbSet.add("sage");
+	herbSet.add("lovage");
+	herbSet.add("parsley");
+	herbSet.add("chives");
+	herbSet.add("marjoram");
+	for (String herb : herbSet)
+	{
+		System.out.println(herb);
+	}
+
+
+// Sample Solution to Activity 5
+	// Iteration over a sorted collection
+	// Demonstrates iteration over a treeset of strings
+	// Printing out herb names in alphabetical order
+
+	Set<String> herbSet = new TreeSet<>();
+	herbSet.add("camomile");
+	herbSet.add("rosemary");
+	herbSet.add("basil");
+	herbSet.add("thyme");
+	herbSet.add("mint");
+	herbSet.add("sage");
+	herbSet.add("lovage");
+	herbSet.add("parsley");
+	herbSet.add("chives");
+	herbSet.add("marjoram");
+	  
+	for (String herb : herbSet)
+	{
+		System.out.println(herb);
+	}
+		
+		
+// Sample SOLUTIONS to ACTIVITY 6
+	//(a) and (b)
+	Map<Integer, String> poetMap = new HashMap<>();
+	System.out.println("The map is empty:" + poetMap.isEmpty());
+
+	//(c)
+	poetMap.put(205646, "Dylan Thomas"); 
+	poetMap.put(217887, "Stevie Smith"); 
+	poetMap.put(327886, "Ted Hughes"); 
+	poetMap.put(433457, "Stevie Smith"); 
+	poetMap.put(578799, "Seamus Heaney"); 
+	System.out.println("The size of the map is: " + poetMap.size());
+
+// Sample SOLUTIONS to ACTIVITY 7
+	//(a)
+	System.out.println("The value associated with key 578799 is: " + poetMap.get(578799));
+
+	//(b)
+	System.out.println("The value associated with key 123456 is: " + poetMap.get(123456)); 
+
+	//(c)
+	poetMap.put(578799, "Brian Patten");
+
+	//(d)
+	System.out.println("The value associated with key 578799 is: " + poetMap.get(578799));
+
+	//(e)
+	String value = poetMap.remove(433457);
+	System.out.println(value);
+		  
+//Sample SOLUTION to ACTIVITY 8
+	System.out.println("The map contains an entry for key 217887:  " + poetMap.containsKey(217887));
+
+	System.out.println("The map contains an entry whose value is Ted Hughes: "
+		                   + poetMap.containsValue("Ted Hughes"));    
+		
+		
+// Sample SOLUTION to ACTIVITY  9
+	// Demonstrates iterating over a map to calculate an average
+
+	Map<String,Integer> ageMap = new HashMap<>();
+	ageMap.put("Jill",  33);
+	ageMap.put("James", 45);
+	ageMap.put("Louise", 57);
+	ageMap.put("Peter", 26);
+	ageMap.put("Sally", 51);
+	  
+	int totalAge = 0;
+	for (String eachName : ageMap.keySet()) 
+	{
+		totalAge =  totalAge + ageMap.get(eachName);
+	} 
+	  
+	int averageAge = totalAge / ageMap.size();
+	System.out.println("The average age is: " + averageAge);
+	
+
+// Sample SOLUTION to ACTIVITY  10
+	// Demonstrates the use of sending first() and last() to a sorted set
+	     
+	SortedSet<String> herbSet = new TreeSet<>();      
+	herbSet.add("camomile");
+	herbSet.add("rosemary");
+	herbSet.add("basil");
+	herbSet.add("thyme");
+	herbSet.add("mint");
+	herbSet.add("sage");
+	herbSet.add("lovage");
+	herbSet.add("parsley");
+	herbSet.add("chives");
+	herbSet.add("marjoram"); 
+		  
+	for (String herb : herbSet)
+	{
+		System.out.println(herb);
+	}         
+	System.out.println( "First herb is " + herbSet.first());
+	System.out.println( "Last herb is " + herbSet.last());
+	 
+
+// Sample SOLUTION to ACTIVITY  11
+	// Demonstrates destructive set intersection
+	    
+	Set<String> set1 = new HashSet<>();
+	Set<String> set2 = new HashSet<>();
+
+	set1.add("a");
+	set1.add("b");
+	set1.add("c");
+	set1.add("d");
+
+	set2.add("f");
+	set2.add("c");
+	set2.add("g");
+	set2.add("a");
+
+	set1.retainAll(set2); 
+
+	System.out.println("The intersection is: ");
+	for (String element : set1)
+	{
+		System.out.println(element);
+	}
+	  
+
+// Sample SOLUTION to ACTIVITY  12
+	// Demonstrates non-destructive set union
+	   
+	Set<String> set1 = new HashSet<>();
+	Set<String> set2 = new HashSet<>();
+
+	set1.add("a");
+	set1.add("b");
+	set1.add("c");
+	set1.add("d");
+
+	set2.add("f");
+	set2.add("c");
+	set2.add("g");
+	set2.add("a");
+
+	Set<String> set3 = new HashSet<>(set1);
+
+	set3.addAll(set2); 
+
+	System.out.println("The union is:");
+	for (String element : set3)
+	{
+		System.out.println(element);
+	}
+	  
+// Sample SOLUTIONS to ACTIVITIES 13- 18 - see  Unit 10 Projects 

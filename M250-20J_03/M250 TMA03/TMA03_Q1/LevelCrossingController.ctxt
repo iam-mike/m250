@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=boolean\ getTrainComing()
+comment0.text=\r\n\ @return\ trainComing\r\n
+comment1.params=trainComing
+comment1.target=void\ setTrainComing(boolean)
+comment1.text=\r\n\ @param\ trainComing\r\n\ setter\ for\ trainComing\r\n
+comment2.params=
+comment2.target=void\ setPositions()
+comment2.text=\r\n\ Sets\ the\ positions\ of\ the\ lights.\r\n
+comment3.params=
+comment3.target=int\ findNumRepeats()
+comment3.text=\r\n\ Find\ out\ how\ many\ times\ red\ lights\ should\ flash\ at\ the\ crossing.\r\n\ Simulates\ length\ of\ train\ at\ crossing.\r\n
+comment4.params=time
+comment4.target=void\ delay(int)
+comment4.text=\r\n\ Causes\ execution\ to\ pause\ for\ a\ number\ of\ milliseconds.\r\n
+numComments=5

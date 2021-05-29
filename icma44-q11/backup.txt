@@ -1,0 +1,10 @@
+Map<String, String> users = new HashMap<>();
+users.put("Captain Pugwash", "6001");  
+users.put("Tom the Cabin Boy", "5204");  
+users.put("Pirate Jake", "0667");
+
+Set<String> keys = users.keySet();
+for(String key : keys)
+{
+System.out.println(users.get(key));
+}

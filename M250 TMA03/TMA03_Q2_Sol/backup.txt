@@ -1,0 +1,11 @@
+Builder aBuilder = new Builder();
+aBuilder.addContractor("GV67WEP","Mike","51 High Street","Plumber");
+aBuilder.addContractor("CN04DUH","Jeff","15 Low Street","Painter");
+aBuilder.addContractor("EX52MN","Bob","199 Park Street","Plumber");
+
+
+aBuilder.findContractor("456DEF");
+aBuilder.findContractor("456ZZZ");
+aBuilder.findContractor("EX52MZN");
+
+Set<Contractor> result = aBuilder.findContractorsForTrade("Plumber");
