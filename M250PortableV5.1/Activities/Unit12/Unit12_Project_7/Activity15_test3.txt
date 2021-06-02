@@ -1,3 +1,0 @@
-James Boyce,0010,45.0
-Elizabeth Smithson,0203,5.0
-Stephan Boswell,0453

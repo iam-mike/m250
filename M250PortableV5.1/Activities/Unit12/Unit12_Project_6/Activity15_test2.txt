@@ -1,3 +1,0 @@
-James Boyce,0010,45.0
-Alan Holdworth,0045,Fifty five pounds
-Elizabeth Smithson,0203,0.0
